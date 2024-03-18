@@ -1,0 +1,236 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f5f5f5; /* Soft off-white background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 20px; /* Increase padding for more space */
+}
+
+section {
+    text-align: center;
+    padding: 20px 20px; /* Increased padding for more space */
+    border-bottom: 2px solid #eaeaea; /* Subtle border for separation */
+}
+
+h1, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2a5d78; /* A color that matches the theme - adjust as needed */
+    margin: 0 0 20px 0;
+    padding-bottom: 10px; /* Space below the header */
+    border-bottom: 3px solid #2a5d78; /* A line to accentuate the title */
+    display: inline-block; /* Necessary for the border to fit the text length */
+}
+
+header {
+    background-color: #f0f0f0;
+}
+
+#about {
+    margin: 20px 0;
+}
+
+#hero {
+    background: url('wallpaper.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the text is above the overlay */
+    color: #fff;
+    text-align: center;
+    width: 100%; /* Makes sure the content width is the full container width */
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em; /* Large text for the name */
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em; /* Subtitle text size */
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-links a, nav a {
+    margin: 0 10px;
+    color: #333; /* Or choose a color that matches your theme */
+    text-decoration: none;
+}
+
+.social-links a:hover, nav a:hover {
+    color: #555; /* Slightly darker on hover for visual feedback */
+}
+
+.fab {
+    font-size: 1.5em; /* Adjust icon size as necessary */
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.block1 {
+    background-color: #f9f9f9; /* Light background for the block1 section */
+    padding: 20px 0;
+}
+
+.block1-item {
+    margin-bottom: 20px;
+}
+
+.block1-item h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.block1-item h4 {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* ... existing styles ... */
+
+.block2 {
+    background-color: #f5f5f5; /* Default background color for block 2 section for alterating effect */
+    padding: 20px 20px;
+}
+
+.block2-item {
+    margin-bottom: 20px;
+}
+
+.block2-item h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.block2-item h4 {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: 20px; /* Height of the separator */
+}
+
+.separator::before {
+    content: '';
+    width: 200px; /* Total width of the pattern */
+    border-bottom: 2px dotted grey; /* Dotted line styling */
+    line-height: 0; /* Ensures the dots are centered vertically */
+}
+
+#skills {
+    background-color: #f9f9f9
+}
+
+.skills-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    color: #666;
+}
+
+.skill-column {
+    width: 22%; /* Adjust based on your preference */
+    padding: 10px;
+}
+
+.skill-column:not(:last-child) {
+    border-right: 2px solid #ccc; /* Vertical line separator */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-column:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid #ccc; /* Horizontal line separator for mobile */
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8em;
+    background-color: #ebebeb; /* Slightly darker shade for the footer */
+    color: #333;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p, .footer-copywrite p {
+    margin: 10px 0;
+}
+
+.footer-copywrite span {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-contact, .footer-copywrite {
+        font-size: smaller;
+    }
+}
+
+
+
+
