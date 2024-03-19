@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="spider-logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Work</h1>
+        <div class="social-links">
+            <a href="https://www.instagram.com/vamshisaini__01/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vamshi-saini-031909204/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/VamshiSaini1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <section class="work-section" id="academic-projects">
+        <h2>Academic Projects</h2>
+        <div class="scrollable-section">
+            <div class="project-card" onclick="openModal('acad-modal1')">
+                <h3>Smart Appliances</h3>
+                <img src="Smart Appliances DP.jpg" alt="Smart Appliances Project Image">
+            </div>
+            <div id="acad-modal1" class="modal">
+              <div class="modal-content">
+                <span onclick="closeModal('acad-modal1')"></span>
+                <h2>Smart Appliances</h2>
+                <p>Aim of this project is to reduce the amount of power consumed by every household and office,
+                    which share major energy consumption.
+                </p>
+                <p>
+                    Nowadays, humankind is moving towards new technologies by replacing manual operations with
+                    automatically controlled devices.
+                    The basic requirements for the people are light's and a fan's.
+                    Over time these two have become needs and they are more considered as comforts.
+                    Usually, we use fans and light throughout the day depending upon the environmental factors such
+                    as availability of sunlight, temperature and climate situations, etc.
+                </p>
+                <p>
+                    Now, what if we have an option to control our appliances depending on these factors without any
+                    effort? sounds amazing right. With the use of IoT, we can make this possible.
+                    We can convert our regular, daily using appliances to fully automated appliances, which in turn
+                    reduce human efforts and also save electricity.
+                    We will further see how the idea of making appliances automatic will work by using a prototype
+                    model.
+                </p>
+                <h4>Components Used:</h4>
+                <hr>
+                <p>➢ Arduino Uno R3</p>
+                <p>➢ Jumper wires for connections</p>
+                <p>➢ 5 LED's to replicate room lights</p>
+                <p>➢ 1 LDR - for natural light detection</p>
+                <p>➢ 1 PIR - For human motion detection</p>
+                <p>➢ "103 Thermistor " - to detect room temperature</p>
+                <p>➢ One 27k ohm resistor and 10k resistor</p>
+                <p>➢ 5v DC motor to replicate fan</p>
+                <p>➢ 16x2 LCD to show temp, fan speed, light status</p>
+                <h4>Working:</h4>
+                <hr>
+                <p>PIR sensor is used to detect the human motion and send inputs to the microcontroller.
+                    Based on the PIR sensor inputs, the microcontroller looks for the inputs from LDR and Thermistor
+                    which gives input to the controller about the natural day light availability and the room
+                    temperature.
+                </p>
+                <p>
+                    Based on these three sensor inputs, the controller will operate the LED lights and the fan. This
+                    model is a prototype, so small scale sensors can do the work.
+                    When we need to implement this concept on a large scale basis, we need to use advanced sensors
+                    which replace the basic sensors but performs the same operation.
+                </p>
+                <p>To know more about the project please click on the link below.</p>
+                <a href="Smart Appliances PPT.pptx" download>Download</a>
+                <a href="https://github.com/VamshiSaini1/Smart-Appliances" target="_blank">github</a>
+            </div>
+            </div>
+            <div class="project-card" onclick="openModal('acad-modal2')">
+                <h3>Solar Electric Vehicle</h3>
+                <img src="SEV1.jpg" alt="Solar Electric Vehicle Project Image">
+            </div>
+            <div id="acad-modal2" class="modal">
+                <div class="modal-content">
+                  <span onclick="closeModal('acad-modal2')"></span>
+                  <h2>Solar Electric Vehicle</h2>
+                  <p>Since the fuel prices are increasing day by day not only in India, but throughout the world,
+                    there is a tremendous need to search an alternative to conserve the natural resources and save
+                    the environment at the same time by reducing the pollution.
+                </p>
+                <p>
+                    Thus a solar vehicle is an electric vehicle that provides that alternative by harnessing solar
+                    energy to charge the battery and thus provide required voltage to run the motor. Since India is
+                    blessed with nine months of sunny climate, the concept of solar vehicle is very friendly in
+                    India. Therefore solar vehicle can become a vital alternative to the fuel using automobiles.
+                    The promising benefits of this concept are:
+                </p>
+                <p>➢ Using solar energy will enhance the efficiency of the vehicle.</p>
+                <p>➢ Shifting towards sustainable movement by saving fossil fuels and using sunlight as a renewable
+                    resource.</p>
+                <p>➢ Reducing pollution in the environment, as solar vehicles do not emit toxic gases.</p>
+                </p>
+                <h4>Components Used:</h4>
+                    <hr>
+                    <p>➢ Two 12V Solar Panels</p>
+                    <p>➢ 24volts Brushed DC Motor</p>
+                    <p>➢ Two 12v, 7.5Amp Lead Acid Batteries</p>
+                    <p>➢ A DC Motor Controller</p>
+                    <p>➢ Arduino UNO to display voltage and current readings</p>
+                    <p>➢ Accelerator, Brakes</p>
+                    <p>➢ Solar Charger</p>
+                    <p>➢ Connecting Wires</p>
+                    <p>➢ 5 LED's</p>
+                    <p>➢ Resistors(1-19 kohm, 1-5 kohm, 6-100 ohm)</p>
+                    <h4>Working</h4>
+                    <hr>
+                    <p>From the above block diagram, we‘ll get a basic idea of what‘s going on. Let us divide this block
+                        diagram into two parts, the below Part and the above part.
+                    </p>
+                    <p>
+                        The below part tells us how the connections are made between motor and the controller, the above
+                        part explains us additionally how solar panels are arranged and used along with the main system.
+                        In this entire arrangement, the motor controller is the heart of the system. It is used to
+                        control the motor by taking the input from the accelerator and brakes.
+                        The accelerator is used to control the speed of the motor and brakes are used to cut the power
+                        supply to the motor so that there will be no supply to the wheels to rotate.
+                        The motor controller is also used to power the headlamps, brake lights. It also comes with an
+                        inbuilt charging port which allows us to charge the batteries using an adaptor.
+                        The working of this model is as simple as this: The motor controller takes the input from the
+                        accelerator and controls the rotation of the motor similarly it takes input from brakes to cut
+                        off the rotation of the motor.
+                        But without an external energy source, it is not possible to use the motor. So we have to
+                        connect the batteries to the power port on the motor controller to supply adequate power to
+                        drive the motor.
+                        There are some other minor components such as headlamps, charge indicators which are used to our
+                        comfort.
+                    </p>
+                    <p>
+                        To this system, we additionally need to connect the solar panels to make this an efficient model
+                        to use.
+                        After arranging the panels, we have to connect the two 12v solar panels in series making in 24v.
+                        These wires from solar panels are connected to the charge controller. The use of a charge
+                        controller is to avoid any fluctuations and to avoid overcharging of the batteries.
+                        To charge the batteries with solar energy we have to connect the battery terminals at their
+                        respective terminals on the charge controller.
+                        Since we have 2 options to charge the bike now, out of which one is a continuous source, we have
+                        succeeded in making an efficient and low-cost electric vehicle to use.
+                    </p>
+                    <h4>Simulation of the motor to get speed and torque characteristics:</h4>
+                    <hr>
+                    <p>To get the characteristics of a permanent magnet DC motor we used MATLAB and Simulink to design a
+                        mathematical model of motor which display Speed and Torque characteristics.</p>
+                    <img src="SEV4.jpg" alt="SEV 4 Circuit" style="display:inline; width:49.5%; height:450px">
+                    <img src="SEV6.jpg" alt="SEV 6 Graph" style="display:inline; width:49.5%; height:450px">
+                    <br>
+                    <p>To know more about motor simulation please <a href="Simulation of Motor.docx" target="_blank"
+                            download>click me</a></p>
+                    <p>To know more about the project please click on the links below.</p>
+                    <a href="SOLAR ELECTRIC VEHICLE PDF.pdf" target="_blank" download>Download</a>
+                    <a href="" target="_blank">github</a>
+                </div>
+              </div>
+              <div class="project-card" onclick="openModal('acad-modal3')">
+                <h3>Voice Controlled Robot</h3>
+                <img src="Remote Controlled Robot.jpg" alt="Voice Controlled Robot Project Image">
+              </div>
+              <div id="acad-modal3" class="modal">
+                <div class="modal-content">
+                  <span onclick="closeModal('acad-modal2')"></span>
+                  <h2>Voice Controlled Robot</h2>
+                  <p>The purpose of this project is to implement the skills I gained during my internship period.
+                    A remote-controlled car allowed me to work with various sensors, actuators, software.
+                </p>
+                <h4>Components Used:</h4>
+                    <hr>
+                    <p>➢ Arduino Uno R3</p>
+                    <p>➢ Jumper wires for connections</p>
+                    <p>➢ HC-05 Bluetooth Module </p>
+                    <p>➢ L293D Motor Driver </p>
+                    <p>➢ Four Wheeled Robot Chassis </p>
+                    <p>➢ Two DC Motors</p>
+                    <p>➢ 12-V Battery </p>
+                    <h4>Working:</h4>
+                    <hr>
+                    <p>The working of remote-controlled robot goes like this: </p>
+                    <p>We give the commands forward, backward, left, and right from the transmitter (in our case it is
+                        our mobile), now these commands are received by the receiver that is our HC-05 bluetooth module
+                        which is connected to the Arduino board. Arduino will receive these signals from bluetooth
+                        module with the help of TX and RX pins.</p>
+                    <p>The Arduino board then sends the signal to the L293 motor driver, which is responsible for
+                        guiding and controlling all the motors that are used to move the robot.</p>
+                    <p>To make Arduino board a responsible board we need to program the microcontroller.
+                        Here we use the Arduino IDE platform to write, check, compile, and to upload the code to
+                        Arduino.
+                    </p>
+                    <p>To know more about the project please click on the link below.</p>
+                    <a href="Remote Controlled Robot.docx" download>Download</a>
+                    <a href="https://github.com/VamshiSaini1/Remote-Controlled-Robot" target="_blank">github</a>
+                </div>
+              </div>
+              <div class="project-card" onclick="openModal('acad-modal4')">
+                <h3>Smart Street Lights</h3>
+                <img src="Smart Street Lights DP.jpg" alt="Smart Street Light Project Image">
+            </div>
+            <div id="acad-modal4" class="modal">
+              <div class="modal-content">
+                <span onclick="closeModal('acad-modal4')"></span>
+                <h2>Smart Street Lights</h2>
+                <p>This Project aims for designing and executing the advanced development of street lights to save
+                    energy.
+                    We are all aware that the street lights are switched on manually after it gets dark in the night
+                    and are switched off the next day when there’s sufficient light.</p>
+                <p>
+                    But There’s a high possibility and there are real-time instances where they’re not switched on
+                    at the correct time causing troublesome experiences to drivers who travel at night and also
+                    sometimes are not switched off even when there is natural light available, leading to sheer
+                    wastage of energy.
+                </p>
+                <p>
+                    So, this proposed project helps to overcome these difficulties and help us to save energy by
+                    making the process automatic, where street lights will turn on under neccessary conditions based
+                    on pedestrians and vehicles movement.
+                    I'm going to discuss the creation of its prototype, which can be implemented in real time
+                    application.
+                </p>
+                <h4>Components Used:</h4>
+                    <hr>
+                    <p>➢ Arduino UNO</p>
+                    <p>➢ Ultrasonic Distance Sensor HSR-04</p>
+                    <p>➢ LEDs- Preferably Yellow x4</p>
+                    <p>➢ Resistor 10Kohms</p>
+                    <p>➢ 1 LDR- For natural light detection</p>
+                    <p>➢ Jumper Wires and Mini Breadboard</p>
+                    <p>➢ Cardboard Box</p>
+                    <p>➢ 9v External Power Supply (If needed)</p>
+                    <h4>Working:</h4>
+                    <hr>
+                    <p>Once the Connections are set-up, and after uploading the code, if we run it, we can clearly
+                        observe that initially the lights are switched off, if any vehicle enters in its (sensor)
+                        proximity, the LEDs glow and provide the light.
+                        This Proximity can be set accordingly to our requirements.
+                    </p>
+                    <p>
+                        The work of the photo-resistor or LDR is that, if there is sufficient light falling on it, it
+                        doesn’t let the LEDs glow unnecessarily, and makes them glow only when there’s no sufficient
+                        light falling on it.
+                    </p>
+                    <p>
+                        Hence this system can be applied in real time so that we can reduce the wastage of electricity
+                        and also reduce the manual work force to operate them.
+                    </p>
+                    <p>To know more about the project please click on the link below.</p>
+                    <a href="Smart Street Light System PDF.pdf" target="_blank" download>Download</a>
+                    <a href="https://github.com/VamshiSaini1/Smart-Street-Light-System" target="_blank">github</a>
+              </div>
+            </div>
+          </div>          
+    </section>
+
+    <section class="work-section" id="personal-projects">
+        <h2>Personal Projects</h2>
+        <div class="scrollable-section">
+            <div class="project-card" onclick="openModal('per-modal1')">
+                <h3>MBX Sales Application</h3>
+                <img src="MBX3.png" alt="Per Project 1 Image">
+            </div>
+            <div id="per-modal1" class="modal">
+              <div class="modal-content">
+                <span onclick="closeModal('per-modal1')"></span>
+                <h2>MBX Sales Application</h2>
+                <p>The purpose of this project is to build a search engine for sales executives who can search thier
+                    prospective accounts and contacts from the salesforce application.
+                    The search engine is implemented using Salesforce Administration, Apex programming language,
+                    Lightning Web Components, Salesforce Object Query Language.
+                    Along with the development of search engine, other features like pagination, navigation, report
+                    dashboard were also implemented for ease accessability which will improve the executives
+                    productivity.
+                </p>
+                <p>
+                    To implement the above mentioned functionalities, I used salesforce administration tools like
+                    data import, object manager, lookup and master relationships, etc to set up data and the
+                    required conditions.
+                    Finally to make sure the work is done with quality, I used test classes and debugging concept to
+                    test the code coverage and the potential errors.
+                </p>
+                <h4>Search Engine, Pagination, and Navigation</h4>
+                <hr>
+                <img src="MBX3.png" alt="MBX3 png" style="width:100%; height:50%">
+                <h4>Test Coverage</h4>
+                <hr>
+                <img src="MBX4.png" alt="MBX4 png" style="width:100%; height:50%">
+                <h4>Reports and Dashboard</h4>
+                <hr class="horizantalLine">
+                <img src="MBX2.png" alt="MBX2 png" style="width:100%; height:50%">
+                <h4>Concepts used:</h4>
+                <hr>
+                <p>➢Creation of custom objects and fields using object manager </p>
+                <p>➢Using lookup and master relationships to create parent child relationships</p>
+                <p>➢Creating profiles and using permission sets to maintain data integrity. This will not allow the
+                    users to access
+                    other sales executive records.
+                </p>
+                <p>➢ Apex programming to implement the search functionality by taking input and retrieving data from
+                    database and to test the created apex classes to ensure code coverage</p>
+                <p>➢ SOQL to query data from the database</p>
+                <p>➢ Lighning web components to design the UI</p>
+                <p>➢ Java Script to implement pagination to display 5 records per page</p>
+                <p>➢ Java Script to implement navigation to the selected record</p>
+                <p>➢ Reports and dashboards to implement data visualization</p>
+                <h4>Working:</h4>
+                <hr>
+                <p>As a sales executive when I logged in to the application, I want to search my potential customers
+                    instead of going through every record.
+                    Search engine will help me in searching the required customers by allowing me to enter their
+                    name in the search box.
+                    From the matching output list I can directly navigate to the customer record page to deal with
+                    sales activity.
+                    To make it even simple, only 5 records per page are displayed, this will allow me to look in to
+                    the records clearly without missing any.
+                </p>
+                <p>
+                    Apart from accessing customers, I can also look in to the statistics and data with the help of
+                    data visualization, where data is showcased in the form of pie charts, bar graphs instead of
+                    large and boring paragraphs.
+                </p>
+                <p>To know more about the project please click on the link below.</p>
+                <a href="https://github.com/VamshiSaini1/MBX-Sales-App" target="_blank">github</a>
+              </div>
+            </div>
+            <div class="project-card" onclick="openModal('per-modal2')">
+                <h3>My Trailhead Account</h3>
+                <img src="Trailhead.png" alt="Per Project 2 Image">
+            </div>
+            <div id="per-modal2" class="modal">
+                <div class="modal-content">
+                  <span onclick="closeModal('per-modal2')"></span>
+                  <h2>My Trailhead</h2>
+                  <p>To see more projects, trails, badges regarding salesforce administration,
+                    development and JavaScript please visit my Trailhead account.</p>
+                <button type="button" onclick="location.href='https://trailblazer.me/id/saini01'"
+                    class="btn btn-primary" data-bs-toggle="modal" data-bs-target="">Visit</button>
+                </div>
+              </div>
+          </div>          
+    </section>
+
+
+    <section class="work-section" id="certificates">
+        <h2>My Certifications</h2>
+        <div class="scrollable-section">
+            <div class="certificate-card">
+                <img src="Salesforce PD1 Certificate.jpg" alt="Salesforce PD1 Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Salesforce_Associate.png" alt="Salesforce Associate Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Verzeo internship certificate.jpg" alt="Internship Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Python1 Cerificate.jpg" alt="Python Certificate1" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Python2 Cerificate.jpg" alt="Python Certificate2" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="IOT SPECIALIZATION CERTIFICATE.jpg" alt="IOT Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Data Analytics Cerificate.jpg" alt="Data Analytics Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="MPIT Certificate.jpg" alt="MPIT Certificate" class="certificate-image">
+            </div>
+            <div class="certificate-card">
+                <img src="Cryptography Cerificate.jpg" alt="Cryptography" class="certificate-image">
+            </div>
+        </div>          
+    </section>
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/vamshisaini__01/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vamshi-saini-031909204/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/VamshiSaini1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="footer-contact">
+            <p>sainivamshi1@gmail.com</p>
+            <p>+1 2692177735</p>
+        </div>
+        <div class="footer-copywrite">
+            <p>&copy; 2024 <span>VamshiSaini1</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
